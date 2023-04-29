@@ -641,7 +641,7 @@ def olamovies(url):
         soup = "None"
 
         while 'rocklinks.net' not in soup and "try2link.com" not in soup and "ez4short.com" not in soup:
-            res = client.get("https://olamovies.ink/download/", params=params, headers=headers)
+            res = client.get("https://olamovies.monster/download/", params=params, headers=headers)
             soup = BeautifulSoup(res.text,"html.parser")
             soup = soup.findAll("a")[0].get("href")
             if soup != "":
