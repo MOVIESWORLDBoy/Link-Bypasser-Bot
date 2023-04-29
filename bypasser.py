@@ -20,12 +20,12 @@ import ddl
 ##########################################################
 # ENVs
 
-GDTot_Crypt = os.environ.get("CRYPT","b0lDek5LSCt6ZjVRR2EwZnY4T1EvVndqeDRtbCtTWmMwcGNuKy8wYWpDaz0%3D")
+GDTot_Crypt = os.environ.get("CRYPT","Mmdlb1RoRDNwd01kTytMTVhLMkRCV0lwZFRHcExHN2wwc3RoakxDanZUQT0%3D")
 Laravel_Session = os.environ.get("Laravel_Session","")
 XSRF_TOKEN = os.environ.get("XSRF_TOKEN","")
 DCRYPT = os.environ.get("DRIVEFIRE_CRYPT","")
 KCRYPT = os.environ.get("KOLOP_CRYPT","aWFicnVaNWh4TThRbzFqdkE2U2FKNmJOTWhvWkZmbWswaUFadTB5NXJ3RT0%3D")
-HCRYPT = os.environ.get("HUBDRIVE_CRYPT","Q29hdlpLUEZTSEJLUjVZRkZQSExLODFuWGVudUlNK0ZPZlZmS1hENWxZVT0%3D")
+HCRYPT = os.environ.get("HUBDRIVE_CRYPT","NUUrVUFvKzVXNzRsd3lWc1VDYU14N2tPck1QMHltNWlvVFJaTHc4QUM2MD0%3D")
 KATCRYPT = os.environ.get("KATDRIVE_CRYPT","")
 
 
@@ -1522,7 +1522,7 @@ def unified(url):
 
 def urlsopen(url):
     client = cloudscraper.create_scraper(allow_brotli=False)
-    DOMAIN = "https://blogpost.viewboonposts.com/ssssssagasdgeardggaegaqe"
+    DOMAIN = "https://blogpost.viewboonposts.com/ssssssagasdgeardggaegaqe" 
     url = url[:-1] if url[-1] == '/' else url
     code = url.split("/")[-1]
     final_url = f"{DOMAIN}/{code}"
