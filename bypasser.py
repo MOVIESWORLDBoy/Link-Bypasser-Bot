@@ -20,7 +20,7 @@ import ddl
 ##########################################################
 # ENVs
 
-GDTot_Crypt = os.environ.get("CRYPT","Mmdlb1RoRDNwd01kTytMTVhLMkRCV0lwZFRHcExHN2wwc3RoakxDanZUQT0%3D")
+GDTot_Crypt = os.environ.get("CRYPT","NVRWdkRSOTJHUlZxelcxbTNPVmtzVjUrcEtFMlJZbGtNS2Yyc1c4Y1dFND0%3D")
 Laravel_Session = os.environ.get("Laravel_Session","")
 XSRF_TOKEN = os.environ.get("XSRF_TOKEN","")
 DCRYPT = os.environ.get("DRIVEFIRE_CRYPT","")
