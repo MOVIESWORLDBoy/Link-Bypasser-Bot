@@ -16,7 +16,7 @@ from requests import get
 
 
 UPTOBOX_TOKEN = environ.get("UPTOBOX_TOKEN",None)
-ndus = environ.get("TERA_COOKIE",None)
+ndus = environ.get("TERA_COOKIE","YvTvWKxteHuipxXQvGSTJ9nMwPvqPPhM968iRQaz")
 if ndus is None: TERA_COOKIE = None
 else: TERA_COOKIE = {"ndus": ndus}
 
