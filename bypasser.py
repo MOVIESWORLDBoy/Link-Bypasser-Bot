@@ -132,11 +132,11 @@ def scrapeIndex(url, username="none", password="none"):
 
 def tnlink(url):
     client = requests.session()
-    DOMAIN = "https://internet.usanewstoday.club"
+    DOMAIN = "https://financeyogi.net/"
     url = url[:-1] if url[-1] == '/' else url
     code = url.split("/")[-1]
     final_url = f"{DOMAIN}/{code}"
-    ref = "https://usanewstoday.club/"
+    ref = "https://page.tnlink.in/"
     h = {"referer": ref}
     while len(client.cookies) == 0:
         resp = client.get(final_url,headers=h)
@@ -1522,7 +1522,7 @@ def unified(url):
 
 def urlsopen(url):
     client = cloudscraper.create_scraper(allow_brotli=False)
-    DOMAIN = "https://blogpost.viewboonposts.com/ssssssagasdgeardggaegaqe" 
+    DOMAIN = "https://blog.textpage.xyz/?OW8912OPZPKK5HOTAWXJC88Z" 
     url = url[:-1] if url[-1] == '/' else url
     code = url.split("/")[-1]
     final_url = f"{DOMAIN}/{code}"
