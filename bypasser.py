@@ -370,7 +370,7 @@ def scrappers(link):
                   result = resub(r'(?m)^\(https://i.*', '', next_s)
                   star = resub(r'(?m)^\*.*', ' ', result)
                   extra = resub(r'(?m)^\(https://e.*', ' ', star)
-                  gd_txt += ', '.join(findall(r'(?m)^.*https://new1.gdtot.cfd/file/[0-9][^.]*', next_s)) + "\n\n"
+                  gd_txt += ', '.join(findall(r'(?m)^.*https://new6.gdtot.cfd/file/[0-9][^.]*', next_s)) + "\n\n"
         return gd_txt
   
     elif "htpmovies" in link and "/exit.php" in link:
@@ -1819,6 +1819,14 @@ def bitly_tinyurl(url: str) -> str:
 	except: return "Something went wrong :("
 
 ##################################################################################################### 
+# bitlyws
+
+def bitly_ws(url: str) -> str:
+	response = requests.get(url).url
+	try: return response
+	except: return "Something went wrong :("
+	
+##################################################################################################### 
 # thinfi
 
 def thinfi(url: str) -> str :
@@ -2056,6 +2064,11 @@ def shortners(url):
     elif "bit.ly" in url or "tinyurl.com" in url:
         print("entered bitly_tinyurl:",url)
         return bitly_tinyurl(url)
+
+   # bitly
+    elif "bitly.ws" in url:
+        print("entered bitly_ws:",url)
+        return bitly_ws(url)
 
     # thinfi
     elif "thinfi.com" in url:
